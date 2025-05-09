@@ -61,8 +61,8 @@ body {
 
 /* Product Card */
 .product-card {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
-    max-width: calc(26.33% - 20px); /* Adjust max-width for 3 cards per row with 20px gap */
+    flex: 0 0 calc(33.33% - 40px); /* Adjust width for 3 cards per row with 20px gap */
+    max-width: calc(26.33% - 40px); /* Adjust max-width for 3 cards per row with 20px gap */
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
@@ -72,6 +72,15 @@ body {
     position: relative;
     
     gap: 20px;
+}
+
+.plant-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 /* Pseudo-classes - Hover effect on product button */
@@ -93,9 +102,12 @@ body {
 }
 
 .product-image {
-    max-width: 100%;
-    height: 200px; /* Adjust height for better consistency */
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: cover; /* Ensures image fits nicely in box */
+  border-radius: 8px; /* Optional: for nicer look */
 }
+
 
 .product-button {
     background-color: #e74c3c;
